@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/Advent_of_Code_2023.dir/day1.c.o -o Advent_of_Code_2023 

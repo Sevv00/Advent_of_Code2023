@@ -1,0 +1,3 @@
+/media/sf_SO2/Advent_of_Code_2023/Day1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/media/sf_SO2/Advent_of_Code_2023/Day1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/media/sf_SO2/Advent_of_Code_2023/Day1/cmake-build-debug/CMakeFiles/Advent_of_Code_2023.dir
