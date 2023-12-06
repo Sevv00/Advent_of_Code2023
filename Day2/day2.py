@@ -33,7 +33,7 @@ def getGamesHistory(filename):
 
 def getIDSumWithPossibleGames(games_id, games_results, bag_content):
     sum = 0
-    size = len(game_id)
+    size = len(games_id)
     for i in range(size):
         max_col = np.max(games_results[i], 0)
         if np.all(np.greater_equal(bag_content, max_col)):
@@ -44,14 +44,17 @@ def getIDSumWithPossibleGames(games_id, games_results, bag_content):
             
 
 
+def main():
+    game_id, game_res = getGamesHistory("Day2\day2.txt")
 
-game_id, game_res = getGamesHistory("Day2\day2.txt")
+    bag = [12, 13, 14]
 
-bag = [12, 13, 14]
+    sum = getIDSumWithPossibleGames(game_id, game_res, bag)
 
-sum = getIDSumWithPossibleGames(game_id, game_res, bag)
+    print(sum)
 
-print(sum)
+if __name__ == '__main__':
+    main()
 
     
                         
