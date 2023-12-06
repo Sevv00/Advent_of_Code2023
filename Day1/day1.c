@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
+#include "day1.h"
+
 #define ZERO_LEN 4
 #define ONE_LEN 3
 #define TWO_LEN 3
@@ -11,7 +13,6 @@
 #define SEVEN_LEN 5
 #define EIGHT_LEN 5
 #define NINE_LEN 4
-#define RES 54591
 
 const char *numbers[] = {
         "zero", "one", "two" , "three", "four", "five", "six", "seven", "eight", "nine"
@@ -111,11 +112,4 @@ int sum_from_file(char  *filename){
 
     fclose(f);
     return sum;
-}
-
-
-int main() {
-    int res = sum_from_file("../day1.txt");
-    printf("Result %d", res);
-    return 0;
 }
