@@ -39,6 +39,16 @@ def getIDSumWithPossibleGames(games_id, games_results, bag_content):
         if np.all(np.greater_equal(bag_content, max_col)):
             sum += games_id[i]
     return sum
+
+
+def getIDSumOfPowers(games_id, games_results):
+    sum = 0
+    size = len(games_id)
+    for i in range(size):
+        min_col = np.max(games_results[i], 0)
+        sum += np.prod(min_col)
+    return sum
+
         
         
             
@@ -52,6 +62,11 @@ def main():
     sum = getIDSumWithPossibleGames(game_id, game_res, bag)
 
     print(sum)
+
+    sum = getIDSumOfPowers(game_id, game_res)
+
+    print(sum)
+
 
 if __name__ == '__main__':
     main()
